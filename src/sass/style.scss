@@ -1,0 +1,30 @@
+@import 'base/null';
+@import 'base/mixins';
+@import 'base/variables';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+    font-family: 'Inter', 'Playfair Display', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 1337px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/banner';
+@import 'blocks/portfolio';
+@import 'blocks/about';
+@import 'blocks/testimonials';
+@import 'blocks/contact';
+@import 'blocks/footer';
+@import 'blocks/preloader';
+@import 'blocks/anim'; 

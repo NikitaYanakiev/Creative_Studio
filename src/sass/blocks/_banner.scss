@@ -1,0 +1,89 @@
+.banner {
+    position: relative;
+    padding: 20px 15px;
+    overflow: hidden;
+    @media (max-width: 768px) {
+        min-height: 500px;
+    }
+    // .banner__img
+    &__img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 604px;
+        @media (max-width:1260px) {
+            width: 37%;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+        // .banner__img_sub
+        &_sub {
+            left: initial;
+            bottom: initial;
+            right: 0;
+            top: 0;
+            max-width: 577px;
+        }
+    }
+    // .banner__text
+    &__text {
+        max-width: 675px;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        @media (max-width:1260px) {
+            max-width: 60%;
+            @include adaptiv-value("font-size", 24, 12, 1);
+        }
+    }
+    // .banner__title
+    &__title {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: #FFF;
+        font-family: Playfair Display;
+        font-size: 309.341px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        @media (max-width:1260px) {
+            @include adaptiv-value("font-size", 240, 60, 1);
+        }
+    }
+    // .banner__btn
+    &__btn {
+        margin-top: 50px;
+        display: inline-block;
+        min-width: 222px;
+        text-align: center;
+        margin-left: 50%;
+        padding: 13px 19px;
+        flex-shrink: 0;
+        background-color: #fff;
+        border: 2px solid #fff;
+        transition: 0.3s all;
+
+        color:#000;
+        font-family: Inter;
+        font-size: 38.407px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        @media (max-width: 1260px) {
+            @include adaptiv-value("font-size", 38, 20, 1);
+            min-width: 100px;
+
+        }
+    }
+}
+

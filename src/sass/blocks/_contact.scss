@@ -1,0 +1,98 @@
+.contact {
+    padding: 0px 15px 320px 15px;
+    @media (max-width:768px) {
+        padding: 50px 15px;
+    }
+    // .contact__title
+    &__title {
+        margin-bottom: 25px;
+    }
+    // .contact__form
+    &__form {
+        max-width: 855px;
+        margin: 0 auto;
+    }
+    // .contact__name
+    &__name {
+        width: 100%;
+        color: #BBB;
+        font-family: Inter;
+        @include adaptiv-value("font-size", 25, 18, 1);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-color: transparent;
+        border-bottom: 2px solid #FFF; 
+        margin-bottom: 58px;
+        padding: 15px 0;
+        @media (max-width:768px) {
+            margin-bottom: 25px;
+        }
+    }
+    // .contact__email
+    &__email {
+        width: 100%;
+        color: #BBB;
+        font-family: Inter;
+        @include adaptiv-value("font-size", 25, 18, 1);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-color: transparent;
+        border-bottom: 2px solid #FFF; 
+        margin-bottom: 58px;
+        padding: 15px 0;
+        @media (max-width:768px) {
+            margin-bottom: 25px;
+        }
+    }
+    // .contact__message
+    &__message {
+        width: 100%;
+        color: #BBB;
+        font-family: Inter;
+        @include adaptiv-value("font-size", 25, 18, 1);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-color: transparent;
+        border-bottom: 2px solid #FFF; 
+        margin-bottom: 58px;
+        padding: 15px 0;
+        resize: none;
+        min-height: 180px;
+        @media (max-width:768px) {
+            margin-bottom: 25px;
+        }
+    }
+    label {
+        color: #FFF;
+        font-family: Inter;
+        @include adaptiv-value("font-size", 44, 24, 1);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 12px;
+    }
+    // .contact__btn
+    &__btn {
+        cursor: pointer;
+        padding: 13px 40px;
+        background-color: #fff;
+        color: #000;
+        font-family: Inter;
+        @include adaptiv-value("font-size", 38, 24, 1);
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        transition: 0.3s all;
+        border: 1px solid #fff;
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}
